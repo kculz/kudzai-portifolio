@@ -41,10 +41,11 @@ const Header = () => {
           <div className="block">
             <a
              
-              className="bg-red cursor-pointer text-off-white lg:text-sm md:text-sm text-xs py-3 px-5 rounded"
+              className="bg-red flex gap-1 cursor-pointer text-off-white lg:text-sm md:text-sm text-xs py-3 px-5 rounded"
               onClick={() => { handleNav(); scrollTo('contact'); }}
             >
-              Contact me
+              <p>Contact</p>
+              <p>me</p>
             </a>
           </div>
           <a
