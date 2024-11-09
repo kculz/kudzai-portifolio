@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGlobe } from "react-icons/fa";
 import PCCSZIM from "../assets/pccszim.png";
 import PACKAGES from "../assets/packages.png";
-import VOTING from "../assets/voting.png";
+import MODULERIZE from "../assets/modulerize.png";
 import XASH from "../assets/xash.png";
 
 const projects = [
@@ -26,12 +26,12 @@ const projects = [
   },
   {
     id: 3,
-    title: 'SRS Voting System',
-    description: 'A secure and reliable voting system built with Node.js, Express, and MongoDB.',
-    github: 'https://github.com/kculz/voting-system.git',
+    title: 'Modulerize',
+    description: 'AI-powered system design and solutions',
+    link: 'https://modulerize.com',
     icon: <FaGlobe size={24} />,
-    techStack: ['Node.js', 'Express', 'MySQL', 'Tailwind'],
-    screenshot: VOTING,
+    techStack: ['Node.js', 'React.js', 'Django', 'Python'],
+    screenshot: MODULERIZE,
   },
   {
     id: 4,
