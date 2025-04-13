@@ -14,9 +14,9 @@ import {
   SiKubernetes,
   SiRedis,
   SiTerraform,
-  SiAmazonaws,
   SiGithubactions
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 const skillCategories = [
   {
@@ -133,7 +133,7 @@ const skillCategories = [
       {
         name: 'AWS',
         percentage: 70,
-        icon: <SiAmazonaws size={32} />,
+        icon: <FaAws size={32} />,
         color: "#FF9900",
       },
       {
