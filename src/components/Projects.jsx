@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaGlobe, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { SiRedis, SiBullmq, SiTypescript, SiDocker, SiKubernetes } from "react-icons/si";
+import { FaGlobe, FaGithub, FaExternalLinkAlt, FaCogs } from "react-icons/fa";
+import { SiRedis, SiTypescript, SiDocker, SiKubernetes } from "react-icons/si";
 
 // In a real implementation, you would import your images
 // For this example, I'm assuming these imports exist
@@ -45,7 +45,7 @@ const projects = [
     title: 'Distributed Task Processing System',
     description: 'Built a scalable task processing system using Redis and Bull MQ with TypeScript.',
     github: 'https://github.com/yourusername/distributed-task-processor',
-    icon: <SiBullmq size={24} />,
+    // icon: <SiBullmq size={24} />,
     techStack: ['TypeScript', 'Node.js', 'Redis', 'Bull MQ', 'Docker'],
     screenshot: 'DISTRIBUTED_SYSTEM', // Replace with actual import when implementing
     category: 'backend'
