@@ -45,7 +45,6 @@ const projects = [
     title: 'Distributed Task Processing System',
     description: 'Built a scalable task processing system using Redis and Bull MQ with TypeScript.',
     github: 'https://github.com/yourusername/distributed-task-processor',
-    // icon: <SiBullmq size={24} />,
     techStack: ['TypeScript', 'Node.js', 'Redis', 'Bull MQ', 'Docker'],
     screenshot: 'DISTRIBUTED_SYSTEM', // Replace with actual import when implementing
     category: 'backend'
