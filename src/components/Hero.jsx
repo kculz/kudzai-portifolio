@@ -58,13 +58,13 @@ const Hero = () => {
           
           {/* Social links */}
           <div className="flex items-center gap-6">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
+            <a href="https://github.com/kculz" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
+            <a href="https://linkedin.com/in/munyamakudzai" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
+            <a href="https://twitter.com/greycode095" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors">
               <FaTwitter size={24} />
             </a>
           </div>

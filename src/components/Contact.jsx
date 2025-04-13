@@ -67,8 +67,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-1">Email</h4>
-                    <a href="mailto:hello@kudzaimunyama.dev" className="text-gray-600 hover:text-primary">
-                      hello@kudzaimunyama.dev
+                    <a href="mailto:munyamakudzi@gmail.com" className="text-gray-600 hover:text-primary">
+                      munyamakudzi@gmail.com
                     </a>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-gray-800 mb-1">Phone</h4>
                     <a href="tel:+263775123456" className="text-gray-600 hover:text-primary">
-                      +263 775 123 456
+                      +263 771 392 149
                     </a>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-gray-800 mb-1">Location</h4>
                     <p className="text-gray-600">
-                      Harare, Zimbabwe (Remote Available)
+                      Mutare, Zimbabwe (Remote Available)
                     </p>
                   </div>
                 </div>
