@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { FaGlobe, FaGithub, FaExternalLinkAlt, FaCogs } from "react-icons/fa";
-import { SiRedis, SiTypescript, SiDocker, SiKubernetes } from "react-icons/si";
+import { FaGlobe, FaGithub, FaExternalLinkAlt, FaCogs, FaNode, FaMobile } from "react-icons/fa";
+import { SiRedis, SiTypescript, SiDocker, SiKubernetes, SiReact, SiGraphql, SiApollographql, SiExpo } from "react-icons/si";
 
-// In a real implementation, you would import your images
-// For this example, I'm assuming these imports exist
-// import PCCSZIM from "../assets/pccszim.png";
-// import PACKAGES from "../assets/packages.png";
-// import MODULERIZE from "../assets/modulerize.png";
-// import XASH from "../assets/xash.png";
+import PCCSZIM from "../assets/pccszim.png";
+import PACKAGES from "../assets/packages.png";
+import MODULERIZE from "../assets/modulerize.png";
+import XASH from "../assets/xash.png";
+import GREYCODEJS from "../assets/greycodejs.png"; // You'll need to add this image
+import HELPDESK from "../assets/helpdesk.png"; // You'll need to add this image
+import ATTAPP from "../assets/attapp.PNG"; // You'll need to add this image
 
 const projects = [
   {
@@ -17,7 +18,7 @@ const projects = [
     link: 'https://www.pccszim.org',
     icon: <FaGlobe size={24} />,
     techStack: ['Laravel', 'Blade', 'Tailwind', 'React', 'Firebase', 'Express'],
-    screenshot: 'PCCSZIM', // Replace with actual import when implementing
+    screenshot: PCCSZIM, 
     category: 'web'
   },
   {
@@ -27,7 +28,7 @@ const projects = [
     link: 'https://xash.network/',
     icon: <FaGlobe size={24} />,
     techStack: ['Laravel', 'Bootstrap v4.5', 'Blade'],
-    screenshot: 'XASH', // Replace with actual import when implementing
+    screenshot: XASH, 
     category: 'web'
   },
   {
@@ -37,16 +38,16 @@ const projects = [
     link: 'https://modulerize.com',
     icon: <FaGlobe size={24} />,
     techStack: ['Node.js', 'React.js', 'Django', 'Python', 'Docker', 'Kubernetes'],
-    screenshot: 'MODULERIZE', // Replace with actual import when implementing
+    screenshot: MODULERIZE, 
     category: 'web'
   },
   {
     id: 4,
     title: 'Distributed Task Processing System',
     description: 'Built a scalable task processing system using Redis and Bull MQ with TypeScript.',
-    github: 'https://github.com/yourusername/distributed-task-processor',
+    github: 'https://github.com/kculz/distributed-task-processor',
     techStack: ['TypeScript', 'Node.js', 'Redis', 'Bull MQ', 'Docker'],
-    screenshot: 'DISTRIBUTED_SYSTEM', // Replace with actual import when implementing
+    screenshot: 'DISTRIBUTED_SYSTEM', 
     category: 'backend'
   },
   {
@@ -59,18 +60,50 @@ const projects = [
       { name: 'gitignore-init', link: 'https://www.npmjs.com/package/@greycode/gitignore_init' },
       { name: 'ts-microservice-boilerplate', link: 'https://www.npmjs.com/package/@greycode/ts-microservice-boilerplate' },
     ],
-    screenshot: 'PACKAGES', // Replace with actual import when implementing
+    screenshot: PACKAGES, 
     category: 'packages'
   },
   {
     id: 6,
     title: 'DevOps Automation Tools',
     description: 'Collection of CI/CD pipelines and infrastructure as code templates for quick deployment.',
-    github: 'https://github.com/yourusername/devops-tools',
+    github: 'https://github.com/kculz/devops-tools',
     icon: <SiDocker size={24} />,
     techStack: ['Docker', 'Kubernetes', 'GitHub Actions', 'Terraform', 'AWS', 'Jenkins'],
-    screenshot: 'DEVOPS_TOOLS', // Replace with actual import when implementing
+    screenshot: 'DEVOPS_TOOLS', 
     category: 'devops'
+  },
+  // New projects
+  {
+    id: 7,
+    title: 'GreyCodeJS Framework',
+    description: 'A lightweight, flexible Node.js framework built on Express that simplifies web application development with a clean MVC architecture and powerful CLI tools.',
+    github: 'https://github.com/kculz/greycodejs',
+    icon: <FaNode size={24} />,
+    techStack: ['Node.js', 'Express', 'Sequelize', 'CLI Tools', 'MVC Pattern'],
+    screenshot: GREYCODEJS,
+    category: 'frameworks'
+  },
+  {
+    id: 8,
+    title: 'AI-Powered Helpdesk System',
+    description: 'Intelligent ticketing system that uses AI to respond to tickets and enables calling for urgent issues, built with modern web technologies.',
+    github: 'https://github.com/kculz/helpdesk-ticket-system.git',
+    icon: <SiGraphql size={24} />,
+    techStack: ['React', 'Apollo', 'GraphQL', 'Express', 'Redis', 'BullMQ', 'AI Integration'],
+    screenshot: HELPDESK,
+    category: 'backend'
+  },
+  {
+    id: 9,
+    title: 'Mobile App with Express Backend',
+    description: 'Full-stack mobile application with React Native frontend and Express API backend, featuring asynchronous task processing.',
+    github: 'https://github.com/kculz/att-app-mobile.git',
+    secondaryGithub: 'https://github.com/kculz/att-app-server.git',
+    icon: <FaMobile size={24} />,
+    techStack: ['React Native', 'TypeScript', 'Expo', 'Express', 'Redis', 'Bull'],
+    screenshot: ATTAPP,
+    category: 'mobile'
   }
 ];
 
@@ -78,6 +111,8 @@ const categories = [
   { id: 'all', name: 'All Projects' },
   { id: 'web', name: 'Web Development' },
   { id: 'backend', name: 'Backend Systems' },
+  { id: 'mobile', name: 'Mobile Apps' },
+  { id: 'frameworks', name: 'Frameworks' },
   { id: 'devops', name: 'DevOps' },
   { id: 'packages', name: 'Open Source' }
 ];
@@ -99,7 +134,7 @@ const Projects = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Featured Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A showcase of my work across web development, backend systems, and DevOps automation.
+            A showcase of my work across web development, framework design, mobile apps, backend systems, and DevOps automation.
           </p>
         </div>
 
@@ -130,7 +165,7 @@ const Projects = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               <div className="relative overflow-hidden h-56">
-                {/* Replace with actual image components when implementing */}
+                {/* Project image or icon placeholder */}
                 <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                   <div className="text-4xl text-white opacity-50">{project.icon}</div>
                 </div>
@@ -158,6 +193,17 @@ const Projects = () => {
                         className="bg-white text-primary p-3 rounded-full hover:bg-gray-100 transition-colors"
                       >
                         <FaGithub size={18} />
+                      </a>
+                    )}
+                    {project.secondaryGithub && (
+                      <a
+                        href={project.secondaryGithub}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-primary p-3 rounded-full hover:bg-gray-100 transition-colors"
+                        title="Backend Repository"
+                      >
+                        <FaCogs size={18} />
                       </a>
                     )}
                   </div>
