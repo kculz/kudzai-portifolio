@@ -13,7 +13,6 @@ import {
   SiDocker,
   SiKubernetes,
   SiRedis,
-  SiBullmq,
   SiTerraform,
   SiAmazonaws,
   SiGithubactions
@@ -123,7 +122,7 @@ const skillCategories = [
       {
         name: 'Bull MQ',
         percentage: 80,
-        icon: <SiBullmq size={32} />,
+        // icon: <SiBullmq size={32} />,
         color: "#FF6B6B",
       },
       {
