@@ -1,25 +1,14 @@
-// useScroll.js
-import { useState, useEffect } from 'react';
+import { useCallback } from 'react';
 
 const useScroll = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+  const scrollTo = useCallback((elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const yOffset = -80; // Account for fixed header
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }, []);
-
-  const scrollTo = (id) => {
-    const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return { scrollTo };
 };
