@@ -8,7 +8,7 @@ import MODULERIZE from "../assets/modulerize.png";
 import XASH from "../assets/xash.png";
 import GREYCODEJS from "../assets/greycodejs.png"; // You'll need to add this image
 import HELPDESK from "../assets/helpdesk.png"; // You'll need to add this image
-import ATTAPP from "../assets/attapp.PNG"; // You'll need to add this image
+import ATTAPP from "../assets/attapp1.png"; // You'll need to add this image
 
 const projects = [
   {
