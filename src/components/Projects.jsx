@@ -11,47 +11,18 @@ import HELPDESK from "../assets/helpdesk.png"; // You'll need to add this image
 import ATTAPP from "../assets/attapp1.png"; // You'll need to add this image
 
 const projects = [
+  
+  // {
+  //   id: 4,
+  //   title: 'Distributed Task Processing System',
+  //   description: 'Built a scalable task processing system using Redis and Bull MQ with TypeScript.',
+  //   github: 'https://github.com/kculz/distributed-task-processor',
+  //   techStack: ['TypeScript', 'Node.js', 'Redis', 'Bull MQ', 'Docker'],
+  //   screenshot: 'DISTRIBUTED_SYSTEM', 
+  //   category: 'backend'
+  // },
   {
     id: 1,
-    title: 'PCCSZim Website',
-    description: 'A responsive website for PCCSZim, built with React and Tailwind CSS.',
-    link: 'https://www.pccszim.org',
-    icon: <FaGlobe size={24} />,
-    techStack: ['Laravel', 'Blade', 'Tailwind', 'React', 'Firebase', 'Express'],
-    screenshot: PCCSZIM, 
-    category: 'web'
-  },
-  {
-    id: 2,
-    title: 'Xash Network Official Website',
-    description: 'The official website for Xash Network, designed with modern UI/UX.',
-    link: 'https://xash.network/',
-    icon: <FaGlobe size={24} />,
-    techStack: ['Laravel', 'Bootstrap v4.5', 'Blade'],
-    screenshot: XASH, 
-    category: 'web'
-  },
-  {
-    id: 3,
-    title: 'Modulerize',
-    description: 'AI-powered system design and solutions with microservices architecture.',
-    link: 'https://modulerize.com',
-    icon: <FaGlobe size={24} />,
-    techStack: ['Node.js', 'React.js', 'Django', 'Python', 'Docker', 'Kubernetes'],
-    screenshot: MODULERIZE, 
-    category: 'web'
-  },
-  {
-    id: 4,
-    title: 'Distributed Task Processing System',
-    description: 'Built a scalable task processing system using Redis and Bull MQ with TypeScript.',
-    github: 'https://github.com/kculz/distributed-task-processor',
-    techStack: ['TypeScript', 'Node.js', 'Redis', 'Bull MQ', 'Docker'],
-    screenshot: 'DISTRIBUTED_SYSTEM', 
-    category: 'backend'
-  },
-  {
-    id: 5,
     title: 'Open Source Packages',
     description: 'A collection of reusable packages for Node.js applications.',
     packages: [
@@ -63,19 +34,19 @@ const projects = [
     screenshot: PACKAGES, 
     category: 'packages'
   },
-  {
-    id: 6,
-    title: 'DevOps Automation Tools',
-    description: 'Collection of CI/CD pipelines and infrastructure as code templates for quick deployment.',
-    github: 'https://github.com/kculz/devops-tools',
-    icon: <SiDocker size={24} />,
-    techStack: ['Docker', 'Kubernetes', 'GitHub Actions', 'Terraform', 'AWS', 'Jenkins'],
-    screenshot: 'DEVOPS_TOOLS', 
-    category: 'devops'
-  },
+  // {
+  //   id: 6,
+  //   title: 'DevOps Automation Tools',
+  //   description: 'Collection of CI/CD pipelines and infrastructure as code templates for quick deployment.',
+  //   github: 'https://github.com/kculz/devops-tools',
+  //   icon: <SiDocker size={24} />,
+  //   techStack: ['Docker', 'Kubernetes', 'GitHub Actions', 'Terraform', 'AWS', 'Jenkins'],
+  //   screenshot: 'DEVOPS_TOOLS', 
+  //   category: 'devops'
+  // },
   // New projects
   {
-    id: 7,
+    id: 2,
     title: 'GreyCodeJS Framework',
     description: 'A lightweight, flexible Node.js framework built on Express that simplifies web application development with a clean MVC architecture and powerful CLI tools.',
     github: 'https://github.com/kculz/greycodejs',
@@ -85,7 +56,7 @@ const projects = [
     category: 'frameworks'
   },
   {
-    id: 8,
+    id: 3,
     title: 'AI-Powered Helpdesk System',
     description: 'Intelligent ticketing system that uses AI to respond to tickets and enables calling for urgent issues, built with modern web technologies.',
     github: 'https://github.com/kculz/helpdesk-ticket-system.git',
@@ -95,7 +66,7 @@ const projects = [
     category: 'backend'
   },
   {
-    id: 9,
+    id: 4,
     title: 'Mobile App with Express Backend',
     description: 'Full-stack mobile application with React Native frontend and Express API backend, featuring asynchronous task processing.',
     github: 'https://github.com/kculz/att-app-mobile.git',
@@ -104,7 +75,37 @@ const projects = [
     techStack: ['React Native', 'TypeScript', 'Expo', 'Express', 'Redis', 'Bull'],
     screenshot: ATTAPP,
     category: 'mobile'
-  }
+  },
+  {
+    id: 5,
+    title: 'PCCSZim Website',
+    description: 'A responsive website for PCCSZim, built with React and Tailwind CSS.',
+    link: 'https://www.pccszim.org',
+    icon: <FaGlobe size={24} />,
+    techStack: ['Laravel', 'Blade', 'Tailwind', 'React', 'Firebase', 'Express'],
+    screenshot: PCCSZIM, 
+    category: 'web'
+  },
+  {
+    id: 6,
+    title: 'Xash Network Official Website',
+    description: 'The official website for Xash Network, designed with modern UI/UX.',
+    link: 'https://xash.network/',
+    icon: <FaGlobe size={24} />,
+    techStack: ['Laravel', 'Bootstrap v4.5', 'Blade'],
+    screenshot: XASH, 
+    category: 'web'
+  },
+  {
+    id: 7,
+    title: 'Modulerize',
+    description: 'AI-powered system design and solutions with microservices architecture.',
+    link: 'https://modulerize.com',
+    icon: <FaGlobe size={24} />,
+    techStack: ['Node.js', 'React.js', 'Django', 'Python', 'Docker', 'Kubernetes'],
+    screenshot: MODULERIZE, 
+    category: 'web'
+  },
 ];
 
 const categories = [
