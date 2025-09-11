@@ -34,6 +34,7 @@ const skillCategories = [
         name: 'React Native',
         percentage: 80,
         icon: <SiReact size={32} />,
+        color: "#000000",
       },
       {
         name: 'Next.js',
