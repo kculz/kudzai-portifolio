@@ -16,7 +16,8 @@ import {
   SiTerraform,
   SiGithubactions
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaDigitalOcean, FaDigitalOcean } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const skillCategories = [
   {
@@ -25,22 +26,28 @@ const skillCategories = [
     skills: [
       {
         name: 'React',
-        percentage: 90,
+        percentage: 95,
         icon: <SiReact size={32} />,
         color: "#61DAFB",
       },
       {
+        name: 'React Native',
+        percentage: 80,
+        icon: <SiReact size={32} />,
+      },
+      {
         name: 'Next.js',
-        percentage: 70,
+        percentage: 80,
         icon: <SiNextdotjs size={32} />,
         color: "#000000",
       },
       {
-        name: 'TypeScript',
-        percentage: 80,
-        icon: <SiTypescript size={32} />,
-        color: "#3178C6",
-      },
+        name: 'Tailwind CSS',
+        percentage: 100,
+        icon: <RiTailwindCssFill size={32} />,
+        color: "#38BDF8",
+      }
+      
     ]
   },
   {
@@ -70,6 +77,12 @@ const skillCategories = [
         percentage: 70,
         icon: <SiFlask size={32} />,
         color: "#000000",
+      },
+      {
+        name: 'TypeScript',
+        percentage: 80,
+        icon: <SiTypescript size={32} />,
+        color: "#3178C6",
       },
       {
         name: 'Laravel',
@@ -114,10 +127,10 @@ const skillCategories = [
         color: "#2496ED",
       },
       {
-        name: 'Kubernetes',
-        percentage: 65,
-        icon: <SiKubernetes size={32} />,
-        color: "#326CE5",
+        name: 'DigitalOcean',
+        percentage: 90,
+        icon: <FaDigitalOcean size={32} />,
+        color: "#0080FF", 
       },
       {
         name: 'Bull MQ',
@@ -125,20 +138,8 @@ const skillCategories = [
         color: "#FF6B6B",
       },
       {
-        name: 'Terraform',
-        percentage: 60,
-        icon: <SiTerraform size={32} />,
-        color: "#7B42BC",
-      },
-      {
-        name: 'AWS',
-        percentage: 70,
-        icon: <FaAws size={32} />,
-        color: "#FF9900",
-      },
-      {
         name: 'GitHub Actions',
-        percentage: 75,
+        percentage: 95,
         icon: <SiGithubactions size={32} />,
         color: "#2088FF",
       },
