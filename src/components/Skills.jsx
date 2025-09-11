@@ -16,7 +16,7 @@ import {
   SiTerraform,
   SiGithubactions
 } from "react-icons/si";
-import { FaDigitalOcean, FaDigitalOcean } from "react-icons/fa";
+import { FaDigitalOcean } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 const skillCategories = [
