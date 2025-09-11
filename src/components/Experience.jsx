@@ -6,48 +6,80 @@ import { PiNetworkDuotone } from "react-icons/pi";
 const experiences = [
   {
     id: 1,
-    title: 'Software Engineer',
-    company: 'Xash Solutions',
+    title: 'Lead Developer',
+    company: 'LoadFix',
     location: 'Remote',
-    duration: 'March 2023 - April 2024',
-    description: 'Developed scalable backend solutions using Node.js, Laravel and frontend interfaces with React.',
+    duration: '2024 - Present',
+    description: 'Lead the complete development lifecycle of a comprehensive logistics application, overseeing frontend, backend, and DevOps operations.',
     achievements: [
-      'Led the development of 3 major client projects with 100% on-time delivery',
-      'Reduced API response time by 40% through caching and optimization',
-      'Implemented CI/CD pipelines that decreased deployment time by 65%',
-      'Mentored 2 junior developers, improving team productivity'
+      'Designed scalable system architecture to handle complex logistics workflows and real-time data processing',
+      'Built responsive frontend interfaces and robust backend APIs using modern JavaScript frameworks and Node.js',
+      'Implemented CI/CD pipelines, managed deployments, and optimized application performance for production environments',
+      'Coordinated with cross-functional teams to define requirements, design solutions, and deliver features on schedule'
     ],
     icon: <LiaConnectdevelop size={40} />,
     color: '#4F46E5',
   },
   {
     id: 2,
-    title: 'Network Engineer',
+    title: 'Software Engineer',
+    company: 'Curlben Solutions',
+    location: 'Remote',
+    duration: '2023 - Present',
+    description: 'Systems architecture and full-stack development for enterprise-level applications.',
+    achievements: [
+      'Designed and implemented scalable software architectures for enterprise-level applications',
+      'Developed robust server-side applications using Node.js, Express.js, and Python',
+      'Optimized database performance and implemented efficient data storage solutions using MongoDB',
+      'Streamlined development workflows and automated deployment processes through DevOps integration'
+    ],
+    icon: <LiaConnectdevelop size={40} />,
+    color: '#10B981',
+  },
+  {
+    id: 3,
+    title: 'Software Developer',
+    company: 'Xashpay',
+    location: 'Remote',
+    duration: 'March 2023 - March 2024',
+    description: 'Contract role focusing on fintech web application development with emphasis on security and payment integrations.',
+    achievements: [
+      'Designed, coded, tested, and debugged scalable web applications using React.js, Node.js, and PHP Laravel',
+      'Implemented robust security measures to protect sensitive financial data and user information',
+      'Successfully integrated multiple payment gateways and financial service APIs',
+      'Created intuitive and responsive interfaces using HTML5, CSS3, JavaScript, and Tailwind CSS'
+    ],
+    icon: <TbEggCracked size={40} />,
+    color: '#8B5CF6',
+  },
+  {
+    id: 4,
+    title: 'Computer Network Engineer',
     company: 'Lexco IT Solutions',
     location: 'Mutare, Zimbabwe',
-    duration: 'August 2021 - March 2023',
-    description: 'Designed and implemented robust network infrastructure solutions.',
+    duration: 'April 2021 - March 2023',
+    description: 'Part-time role designing and implementing network solutions for educational institutions and government facilities.',
     achievements: [
-      'Configured and maintained networks serving over 500 concurrent users',
-      'Reduced network downtime by 75% through implementing redundant systems',
-      'Deployed and managed firewall solutions for 15+ client organizations',
-      'Created documentation that improved troubleshooting efficiency by 30%'
+      'Successfully installed and configured networks for over 20 schools in Mutare Urban and Rural areas',
+      'Worked on network installation projects for Police Stations in partnership with PORTRAZ',
+      'Designed and implemented network solutions for educational institutions and government facilities',
+      'Specialized in WAN, LAN, and VSAT configurations for various organizational requirements'
     ],
     icon: <PiNetworkDuotone size={40} />,
     color: '#0EA5E9',
   },
   {
-    id: 3,
-    title: 'Junior Software Developer',
-    company: 'Svetu Tech',
-    location: 'Harare, Zimbabwe',
-    duration: 'June 2021 - February 2022',
-    description: 'Contributed to the development of web applications using JavaScript and React.',
+    id: 5,
+    title: 'Web Developer',
+    company: 'Svetu PVT Ltd',
+    location: 'Zimbabwe',
+    duration: 'April 2021 - March 2022',
+    description: 'Internship focused on gaining foundational experience in modern web development technologies.',
     achievements: [
-      'Developed responsive UI components used across 5 client websites',
-      'Fixed over 50 bugs in the codebase, improving application stability',
-      'Collaborated with UX designers to implement intuitive user interfaces',
-      'Participated in daily stand-ups and agile development processes'
+      'Developed proficiency in JavaScript, Node.js, Express.js, React.js, React-Redux, and MongoDB',
+      'Contributed to multiple client projects gaining hands-on experience in professional software development',
+      'Gained foundational experience in modern full-stack web development technologies',
+      'Worked collaboratively on client projects under senior developer supervision'
     ],
     icon: <TbEggCracked size={40} />,
     color: '#F97316',
@@ -72,8 +104,8 @@ const Experience = () => {
         </div>
 
         {/* Timeline navigation */}
-        <div ref={timelineRef} className="flex justify-center mb-12">
-          <div className="relative flex items-center">
+        <div ref={timelineRef} className="flex justify-center mb-12 overflow-x-auto">
+          <div className="relative flex items-center min-w-max">
             {experiences.map((exp, index) => (
               <React.Fragment key={exp.id}>
                 {/* Timeline connector */}
