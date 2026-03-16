@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gray-900 text-white py-16 px-6">
+    <footer className="bg-dark border-t border-white/5 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* About */}
@@ -17,16 +17,16 @@ const Footer = () => {
               A passionate software engineer specializing in full-stack development, distributed systems, and DevOps practices, dedicated to creating innovative solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/kculz" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors">
+              <a href="https://github.com/kculz" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <FaGithub size={22} />
               </a>
-              <a href="https://linkedin.com/in/kudzaimunyama" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors">
+              <a href="https://linkedin.com/in/kudzaimunyama" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <FaLinkedin size={22} />
               </a>
-              <a href="https://twitter.com/greycode095" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors">
+              <a href="https://twitter.com/greycode095" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <FaTwitter size={22} />
               </a>
-              <a href="mailto:munyamakudzi@gmail.com" className="text-gray-300 hover:text-primary transition-colors">
+              <a href="mailto:munyamakudzi@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
                 <FaEnvelope size={22} />
               </a>
             </div>
@@ -39,7 +39,7 @@ const Footer = () => {
               <li>
                 <a 
                   onClick={() => scrollTo('experiences')} 
-                  className="text-gray-300 hover:text-primary transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer text-sm"
                 >
                   Experience
                 </a>
@@ -47,7 +47,7 @@ const Footer = () => {
               <li>
                 <a 
                   onClick={() => scrollTo('projects')} 
-                  className="text-gray-300 hover:text-primary transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer text-sm"
                 >
                   Projects
                 </a>
@@ -55,7 +55,7 @@ const Footer = () => {
               <li>
                 <a 
                   onClick={() => scrollTo('skills')} 
-                  className="text-gray-300 hover:text-primary transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer text-sm"
                 >
                   Skills
                 </a>
@@ -63,7 +63,7 @@ const Footer = () => {
               <li>
                 <a 
                   onClick={() => scrollTo('contact')} 
-                  className="text-gray-300 hover:text-primary transition-colors cursor-pointer"
+                  className="text-gray-400 hover:text-primary transition-colors cursor-pointer text-sm"
                 >
                   Contact
                 </a>
@@ -75,21 +75,21 @@ const Footer = () => {
           <div className="md:col-span-4">
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-3">
-              <li className="flex items-center text-gray-300">
+              <li className="flex items-center text-gray-400 text-sm">
                 <FaEnvelope className="mr-3 text-primary" />
                 <a href="mailto:munyamakudzi@gmail.com" className="hover:text-primary transition-colors">
                   munyamakudzi@gmail.com
                 </a>
               </li>
-              <li className="flex items-center text-gray-300">
+              <li className="flex items-center text-gray-400 text-sm border-t border-transparent">
                 <svg className="w-4 h-4 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                 </svg>
-                <a href="tel:+263775123456" className="hover:text-primary transition-colors">
+                <a href="tel:+263771392149" className="hover:text-primary transition-colors">
                   +263 771 392 149
                 </a>
               </li>
-              <li className="flex items-start text-gray-300">
+              <li className="flex items-start text-gray-400 text-sm">
                 <svg className="w-4 h-4 mr-3 mt-1 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>

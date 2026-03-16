@@ -25,20 +25,20 @@ const Header = () => {
     <header 
       className={`z-50 top-0 w-full h-20 fixed transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-lg' 
+          ? 'bg-dark/80 backdrop-blur-md border-b border-white/5 shadow-lg' 
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8 h-full">
-        <h1 className={`text-xl font-bold cursor-pointer ${scrolled ? 'text-primary' : 'text-white'}`}>
-          <a onClick={() => { handleNav(); scrollTo('hero'); }}>
+        <h1 className="text-xl font-bold cursor-pointer">
+          <a onClick={() => { handleNav(); scrollTo('hero'); }} className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             kudzaimunyama.dev
           </a>
         </h1>
         
         <div className="flex items-center gap-6">
           <nav className="hidden md:block">
-            <ul className={`flex gap-8 text-sm font-medium ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+            <ul className={`flex gap-8 text-sm font-medium ${scrolled ? 'text-gray-300' : 'text-white/80'}`}>
               <li className="relative group">
                 <a 
                   onClick={() => { handleNav(); scrollTo('experiences'); }}
@@ -71,7 +71,7 @@ const Header = () => {
           
           <button
             onClick={() => { handleNav(); scrollTo('contact'); }}
-            className="bg-primary text-white px-6 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg hover:bg-primary/90 transition-all duration-300"
+            className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-full font-medium text-sm shadow-lg hover:shadow-primary/30 hover:scale-105 transition-all duration-300"
           >
             Contact Me
           </button>
@@ -82,9 +82,9 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {!openNav ? (
-              <BiMenuAltRight size={30} className={scrolled ? 'text-gray-800' : 'text-white'} />
+              <BiMenuAltRight size={30} className={scrolled ? 'text-light' : 'text-white'} />
             ) : (
-              <MdOutlineClose size={30} className={scrolled ? 'text-gray-800' : 'text-white'} />
+              <MdOutlineClose size={30} className={scrolled ? 'text-light' : 'text-white'} />
             )}
           </button>
         </div>
@@ -92,13 +92,13 @@ const Header = () => {
       
       {/* Mobile Navigation Menu */}
       {openNav && (
-        <div className="md:hidden absolute top-20 left-0 right-0 bg-white shadow-lg rounded-b-xl border-t border-gray-100 overflow-hidden">
+        <div className="md:hidden absolute top-20 left-0 right-0 bg-dark-card shadow-xl rounded-b-xl border-t border-white/5 overflow-hidden">
           <nav className="max-w-7xl mx-auto">
             <ul className="py-4 px-6 flex flex-col gap-4">
               <li>
                 <a 
                   onClick={() => { handleNav(); scrollTo('experiences'); }}
-                  className="block py-2 text-gray-800 hover:text-primary transition-colors"
+                  className="block py-2 text-gray-300 hover:text-primary transition-colors"
                 >
                   Experience
                 </a>
@@ -106,7 +106,7 @@ const Header = () => {
               <li>
                 <a 
                   onClick={() => { handleNav(); scrollTo('projects'); }}
-                  className="block py-2 text-gray-800 hover:text-primary transition-colors"
+                  className="block py-2 text-gray-300 hover:text-primary transition-colors"
                 >
                   Projects
                 </a>
@@ -114,7 +114,7 @@ const Header = () => {
               <li>
                 <a 
                   onClick={() => { handleNav(); scrollTo('skills'); }}
-                  className="block py-2 text-gray-800 hover:text-primary transition-colors"
+                  className="block py-2 text-gray-300 hover:text-primary transition-colors"
                 >
                   Skills
                 </a>
