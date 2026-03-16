@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#2E4053', // Dark Blue
-        secondary: '#456778', // Medium Blue
-        tertiary: '#6495ED', // Light Blue
-        dark: '#333333', // Dark Gray
-        light: '#F7F7F7', // Light Gray
-        black: '#000000',
+        primary: '#8B5CF6', // Violet
+        secondary: '#06B6D4', // Cyan
+        accent: '#10B981', // Emerald
+        dark: '#030712', // Slate 950
+        'dark-card': '#111827', // Slate 900
+        light: '#F8FAFC', // Slate 50
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
